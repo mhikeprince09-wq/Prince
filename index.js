@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 process.on('uncaughtException', (err)=>{ if(err.message.includes('Session')||err.message.includes('MAC')||err.message.includes('decrypt')){console.log('[IGNORED]',err.message);return;} console.log(err); });
 process.on('unhandledRejection', (err)=>{ if(err?.message?.includes('Session')||err?.message?.includes('MAC')){console.log('[IGNORED]',err.message);return;} console.log(err); });
 
-const BOT_NAME = "*ETIAS-MINI-BOT*";
+const BOT_NAME = "*KAYZEE-MINI-BOT*";
 const PREFIX = ".";
 const OWNER_NUMBER = (process.env.OWNER_NUMBER || "263778810589").replace(/[^0-9]/g,'');
 const MONGODB_URI = process.env.MONGODB_URI || process.env.MONGO_URL;
